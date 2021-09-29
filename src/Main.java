@@ -14,5 +14,10 @@ public class Main {
 		float prezzo = input.nextFloat();
 		System.out.print("Inserire la percentuale di sconto: ");
 		int sconto = input.nextInt();
+		float scontoTot = prezzo / 100 * sconto;
+		float prezzoScontato = prezzo - scontoTot;
+		System.out.println("Prezzo: EURO " + prezzo);
+		System.out.println("Sconto: EURO " + scontoTot);
+		System.out.println("Prezzo scontato: EURO " + prezzoScontato);
 	}
 }
